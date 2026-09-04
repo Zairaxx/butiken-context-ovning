@@ -9,7 +9,9 @@ genom komponentträdet som props ("prop drilling"):
 
 Ersätt prop drilling-kedjan med React Context.
 
-### Obligatoriska deluppgifter
+OBS! Börja inte koda - utan sitt i era grupper först och rita komponentträdet.
+
+### Deluppgifter
 
 1. Skapa en `CartContext` (t.ex. i `src/context/CartContext.jsx`) med
    `createContext`.
@@ -27,9 +29,7 @@ Ersätt prop drilling-kedjan med React Context.
    istället för `onAddToCart`-prop.
 6. Uppdatera `Cart` så att den läser `cartItems` och `removeFromCart` via
    `useContext` istället för props.
-7. Städa bort props:en som `Page`, `Shop` och `ProductList` inte längre
-   behöver ta emot eller skicka vidare. Om allt är rätt gjort ska de bara
-   rendera sina barnkomponenter utan att bry sig om varukorgen alls.
+7. Städa bort props:en som inte längre behöver ta emot eller skicka vidare.
 
 Appen ska bete sig exakt likadant för användaren efteråt – det är bara hur
 datan flödar internt som ändras.
